@@ -1,0 +1,46 @@
+.area-search-2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar-2 span{
+    font-size: 64px;
+}
+
+.search-bar-2 span:first-child{
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+.search-bar-2 span:last-child{
+    font-weight: 300;
+    font-style: italic;
+}
+
+.git-search-2{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.git-search-2 input[type=text]{
+    width: 600px;
+    height: 50px;
+    outline: 0;
+}
+.git-search-2 button{
+    width: 100px;
+    height: 50px;
+    background-color: $color2;
+    color: $color1;
+    border: transparent;
+    float: right
+}

@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+$color1: white;
+$color2: black;
+$color3: #757575;
+
+.container{
+    width: 100%;
+    max-width: 1384px;
+    margin: 0 auto;
+    padding: 0 28px;
+}
+
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.flex-col{
+    flex-direction: row;
+}
+
+body{
+    background-color: $color1;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.area-search{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar span{
+    font-size: 64px;
+}
+
+.search-bar span:first-child{
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+.search-bar span:last-child{
+    font-weight: 300;
+    font-style: italic;
+}
+
+.git-search{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.git-search input[type=text]{
+    width: 600px;
+    height: 50px;
+    outline: 0;
+    border: 2px solid #000;
+    
+}
+.git-search button{
+    width: 100px;
+    height: 50px;
+    background-color: $color2;
+    color: $color1;
+    border: transparent;
+    float: right;
+    cursor: pointer;
+}
+
+
+//Segundo css
+
+.area-search-2{
+    margin: 28px 0;
+}
+
+.search-bar-2 span{
+    font-size: 42px;
+}
+
+.search-bar-2 span:first-child{
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+.search-bar-2 span:last-child{
+    font-weight: 300;
+    font-style: italic;
+}
+
+.git-search-2{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.git-search-2 input[type=text]{
+    width: 600px;
+    height: 50px;
+    outline: 0;
+    border: 2px solid #000;
+}
+
+.git-search-2 button{
+    width: 100px;
+    height: 50px;
+    background-color: $color2;
+    color: $color1;
+    border: transparent;
+}
+
+
+#profile{
+    display: flex;
+}
+//Aside - Sidebar
+
+.sidebar{
+    width: 100%;
+    max-width: 300px;
+}
+
+.name{
+    font-size: 36px;
+}
+
+.last-name{
+    font-size: 24px;
+    color: $color3;
+}
+
+.avatar{
+    margin-bottom: 45px;
+}
+
+.info{
+    margin-bottom: 15px;
+}
+
+.info img{
+    margin-right: 12px;
+}
+
+.info p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color3;
+}
+
+// MAIN
+main{
+    flex: 1;
+}
+.area-repository{
+    margin-left: 56px;
+    margin-right: 28px;
+}
+
+.item{
+    margin-bottom: 31px;
+}
+
+.item p{
+    margin-bottom: 10px;
+    color: $color3;
+}
+.item span{
+    color: $color3;
+}
+.item span img{
+    margin-right: 10px
+}

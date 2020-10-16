@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finder GitHub</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+<body>
+   <header class="area-search flex container"> <!--HEADER-->
+       <div class="search-bar">
+            <h1><span>Github</span><span>Search</span></h1>
+       </div>
+
+       <div class="git-search">
+            <input id="search" type="text" autofocus >
+            <button onclick="searchUser()"><i class="fas fa-search"></i></button>
+       </div>
+   </header> <!--END HEADER-->
+
+   
+   <div id="container" class="container flex "> 
+
+    <aside class="sidebar"><!--ASIDE-->
+        <div class="avatar">
+           <ul>
+                <img src="assets/img/mm.jpg"  style="width: 300px; height: 300px;" alt="">  
+                <li class="name">Mateus</li>
+                <li class="last-name">Monteiro</li>
+           </ul>
+        </div>
+        
+        <ul>
+            <li id="organization" class="info flex align-center">
+                <img src="assets/img/svg/organization.svg" alt="Empresa">
+                Lux one
+            </li>
+
+            <li id="location" class="info flex align-center">
+                <img src="assets/img/svg/location.svg" alt="Estamos Localizados">
+                <p>Fortaleza,Ce</p>
+            </li>
+
+            <li id ="star" class="info flex align-center">
+                <img src="assets/img/svg/star.svg" alt="">
+                <p>0</p>
+            </li>
+
+            <li id="repository" class="info flex align-center">
+                <img src="assets/img/svg/repository.svg" alt="Repositórios">
+                <p>1</p>
+            </li>
+
+            <li id="folowers" class="info flex align-center">
+                <img src="assets/img/svg/followers.svg" alt="Seguidores">
+                <p>1</p>
+            </li>
+        </ul>
+
+    </aside><!--END ASIDE-->
+
+    <main> <!--MAIN-->
+        <div class="area-repository">
+            <div class="item">
+                <h2>Finder App</h2>
+                <p>Alguma descrição do projeto</p>
+                <span class="flex align-center" ><img src="assets/img/svg/star.svg" alt="">0</span>
+            </div>
+
+            <div class="item">
+                <h2>Wpp App</h2>
+                <p>Alguma descrição do projeto</p>
+                <span class="flex align-center" ><img src="assets/img/svg/star.svg" alt="">0</span>
+            </div>
+
+            <div class="item">
+                <h2>Instagram App</h2>
+                <p>Alguma descrição do projeto</p>
+                <span class="flex align-center"><img src="assets/img/svg/star.svg" alt="">0</span>
+            </div>
+
+            <div class="item">
+                <h2>Facebook App</h2>
+                <p>Alguma descrição do projeto</p>
+                <span class="flex align-center" ><img src="assets/img/svg/star.svg" alt="">0</span>
+            </div>
+        </div>       
+    </main> <!--END MAIN-->
+</div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

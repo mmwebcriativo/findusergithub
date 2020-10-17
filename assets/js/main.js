@@ -1,7 +1,3 @@
-    let areaSearch = document.querySelector(".area-search")
-    let searchBar = document.querySelector(".search-bar")
-    let gitSearch = document.querySelector(".git-search")
-
     const search = document.querySelector("#search")
     const profile = document.querySelector("#profile") //Container que engloba Sidebar e Main
     const url ="http://api.github.com/users"
@@ -18,6 +14,7 @@
         return profile
     }
 
+    //Mostrando Conteúdo com reposta do Github   
     function showProfile(user){
         console.log(user)
         container.innerHTML = ` <div id="container" class="container flex "> 
@@ -91,7 +88,7 @@
         
     }
 
-  
+    //Recebendo o que está sendo digitado no input search
     search.addEventListener("keyup", e =>{
         const user = e.target.value
 
@@ -99,12 +96,13 @@
             getUser(user).then(res => showProfile(res))
         }
         
-    })  //Recebendo o que está sendo digitado no input search
+    })  
 
-    function searchUser(){      
+    function searchUser(){    
+         //Verificando se o campo input está vazio  
         if (search.value == "" ){
             search.style.borderColor = "red" 
-            search.focus() //Verificando se o campo input está vazio
+            search.focus()
         } else{
             
             search.style.borderColor = "#000"

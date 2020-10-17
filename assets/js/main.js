@@ -1,6 +1,6 @@
     const search = document.querySelector("#search")
     const profile = document.querySelector("#profile") //Container que engloba Sidebar e Main
-    const url ="http://api.github.com/users"
+    const url ="https://api.github.com/users"
     const cliente_id = "Iv1.82d8feccc76866da"
     const cliente_secret = "96424516a87ea8773fff6685ec5d45aedb993f59"
 

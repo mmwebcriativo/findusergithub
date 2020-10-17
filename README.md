@@ -1,1 +1,1 @@
-# findusergithub
+Sistema para busca de usuários do Github. V1.0

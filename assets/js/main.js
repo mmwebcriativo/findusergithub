@@ -4,7 +4,7 @@
     let searchBar = document.querySelector(".search-bar")
     let gitSearch = document.querySelector(".git-search")
 
-     const search = document.querySelector("#search")
+    const search = document.querySelector("#search")
     const profile = document.querySelector("#profile") //Container que engloba Sidebar e Main
     const url ="http://api.github.com/users"
     const cliente_id = "Iv1.82d8feccc76866da"
@@ -93,43 +93,27 @@
         
     }
 
-    search.addEventListener("keyup", e =>{
+     
+/*
+     search.addEventListener("keyup", e =>{
         const user = e.target.value
 
         if(user.length > 0){
             getUser(user).then(res => showProfile(res))
         }
         
-    }) //Recebendo o que está sendo digitado no input search
-
-
+    }) */ //Recebendo o que está sendo digitado no input search
     
-    /*
-    
-    function searchUser(){
-        
-        
+    function searchUser(){      
         if ( search.value == "" ){
-            search.style.borderColor = "red"
-            search.focus()
+            search.style.borderColor = "red" 
+            search.focus() //Verificando se o campo input está vazio
         } else{
             search.style.borderColor = "#000"
-            mudarHeader()     
+            window.location.href = "usuarios.html"; //Direcionando para a página usuários
         }
     }
-    
-    function mudarHeader(){
-        container.style.display = ("none")
-        areaSearch.classList.remove('area-search')
-        searchBar.classList.remove('search-bar')
-        gitSearch.classList.remove('git-search')
-    
-        container.style.display = "flex"
-        areaSearch.classList.add('area-search-2')
-        searchBar.classList.add('search-bar-2')
-        gitSearch.classList.add('git-search-2')
-      
-    }  */
+
     
 
 

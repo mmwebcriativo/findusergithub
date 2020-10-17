@@ -7,23 +7,26 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
-<body>
+
+
+<body onload="load()">
    <header class="area-search-2 flex container"> <!--HEADER-->
        <div class="search-bar-2">
-        <h1><a href="index.html" style="color: inherit; text-decoration: none;"><span>Github</span><span>Search</span></a></h1>
+            <h1><span><a  style="text-decoration: none; color: inherit;" href="index.html">Github</a></span><span>Search</span></h1>
        </div>
 
        <div class="git-search-2">
-            <input id="search" type="text" autofocus>
+            <input id="nome" name="nome"  type="text" autofocus>
             <button type="button" onclick="searchUser()"><i class="fas fa-search"></i></button>
        </div>
    </header> <!--END HEADER-->
 
-    <div id="container" class="container flex ">  <!--Area Profile-->
+    <div id="container" class="container flex "> 
 
    
-    </div><!-- END Area Profile-->
+    </div>
 
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+

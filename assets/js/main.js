@@ -1,6 +1,10 @@
+    let areaSearch = document.querySelector(".area-search")
+    let searchBar = document.querySelector(".search-bar")
+    let gitSearch = document.querySelector(".git-search")
+
     const search = document.querySelector("#search")
     const profile = document.querySelector("#profile") //Container que engloba Sidebar e Main
-    const url ="https://api.github.com/users"
+    const url ="http://api.github.com/users"
     const cliente_id = "Iv1.82d8feccc76866da"
     const cliente_secret = "96424516a87ea8773fff6685ec5d45aedb993f59"
 
@@ -14,9 +18,7 @@
         return profile
     }
 
-    //Mostrando Conteúdo com reposta do Github   
     function showProfile(user){
-        console.log(user)
         container.innerHTML = ` <div id="container" class="container flex "> 
 
         <aside class="sidebar"><!--ASIDE-->
@@ -88,25 +90,47 @@
         
     }
 
-    //Recebendo o que está sendo digitado no input search
-    search.addEventListener("keyup", e =>{
-        const user = e.target.value
+    function valorInput(){
+        search.addEventListener("keyup", e =>{
+            const user = e.target.value
 
-        if(user.length > 0){
-            getUser(user).then(res => showProfile(res))
-        }
-        
-    })  
-
-    function searchUser(){    
-         //Verificando se o campo input está vazio  
-        if (search.value == "" ){
-            search.style.borderColor = "red" 
-            search.focus()
-        } else{
+            if(user.length > 0){
+                getUser(user).then(res => showProfile(res))
+            }
             
+        })  //Recebendo o que está sendo digitado no input search
+        
+    }
+
+
+
+    function searchUser(){
+    
+        if ( search.value == "" ){
+            search.style.borderColor = "red" 
+            search.focus() //Verificando se o campo input está vazio
+        } else{
+
+            var nome = document.getElementById("search").value;
+
             search.style.borderColor = "#000"
-            window.location.href = "usuarios.html"; //Direcionando para a página usuários
+            window.location.href = "usuarios.html?"+nome+""; //Direcionando para a página usuários
 
         }
     }
+
+
+    function load(){
+        const queryString = window.location.search;
+        document.getElementById("nome").value = queryString.replace(/[^a-zA-Zs]/g, "");
+
+        var nome = queryString.replace(/[^a-zA-Zs]/g, "");
+
+        getUser(nome).then(res => showProfile(res));
+        
+        
+    }
+    
+
+
+

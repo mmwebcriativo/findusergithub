@@ -1,7 +1,3 @@
-    let areaSearch = document.querySelector(".area-search")
-    let searchBar = document.querySelector(".search-bar")
-    let gitSearch = document.querySelector(".git-search")
-
     const search = document.querySelector("#search")
     const profile = document.querySelector("#profile") //Container que engloba Sidebar e Main
     const url ="https://api.github.com/users"
@@ -18,7 +14,9 @@
         return profile
     }
 
+    //Mostrando Conteúdo com reposta do Github   
     function showProfile(user){
+        console.log(user)
         container.innerHTML = ` <div id="container" class="container flex "> 
 
         <aside class="sidebar"><!--ASIDE-->
@@ -90,46 +88,25 @@
         
     }
 
-    function valorInput(){
-        search.addEventListener("keyup", e =>{
-            const user = e.target.value
+    //Recebendo o que está sendo digitado no input search
+    search.addEventListener("keyup", e =>{
+        const user = e.target.value
 
-            if(user.length > 0){
-                getUser(user).then(res => showProfile(res))
-            }
-            
-        })  //Recebendo o que está sendo digitado no input search
+        if(user.length > 0){
+            getUser(user).then(res => showProfile(res))
+        }
         
-    }
+    })  
 
-    function searchUser(){
-    
-        if ( search.value  == ""){
+    function searchUser(){    
+         //Verificando se o campo input está vazio  
+        if (search.value == "" ){
             search.style.borderColor = "red" 
-            search.focus() //Verificando se o campo input está vazio
+            search.focus()
         } else{
-
-            var nome = document.getElementById("search").value;
-
+            
             search.style.borderColor = "#000"
-            window.location.href = "usuarios.html?"+nome+""; //Direcionando para a página usuários
+            window.location.href = "usuarios.html"; //Direcionando para a página usuários
 
         }
     }
-
-
-    function load(){
-        const queryString = window.location.search;
-        search.value = queryString.replace(/[^a-zA-Zs]/g, "");
-
-        var nome = queryString.replace(/[^a-zA-Zs]/g, "");
-
-        getUser(nome).then(res => showProfile(res));
-        
-        
-    }
-    
-
-
-
-//id="nome" name="nome"

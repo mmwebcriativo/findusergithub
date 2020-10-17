@@ -3,31 +3,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Rubik', sans-serif; }
+  font-family: 'Rubik', sans-serif;
+}
 
 .container {
   width: 100%;
   max-width: 1384px;
   margin: 0 auto;
-  padding: 0 28px; }
+  padding: 0 28px;
+}
 
 .flex {
-  display: flex; }
+  display: flex;
+}
 
 .justify-center {
-  justify-content: center; }
+  justify-content: center;
+}
 
 .align-center {
-  align-items: center; }
+  align-items: center;
+}
 
 .flex-col {
-  flex-direction: row; }
+  flex-direction: row;
+}
 
 body {
-  background-color: white; }
+  background-color: white;
+}
 
 ul {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 .area-search {
   position: absolute;
@@ -39,29 +47,35 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .search-bar span {
-  font-size: 64px; }
+  font-size: 64px;
+}
 
 .search-bar span:first-child {
   font-weight: 700;
-  margin-right: 30px; }
+  margin-right: 30px;
+}
 
 .search-bar span:last-child {
   font-weight: 300;
-  font-style: italic; }
+  font-style: italic;
+}
 
 .git-search {
   flex: 1;
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+}
 
 .git-search input[type=text] {
   width: 600px;
   height: 50px;
   outline: 0;
-  border: 2px solid #000; }
+  border: 2px solid #000;
+}
 
 .git-search button {
   width: 100px;
@@ -70,88 +84,109 @@ ul {
   color: white;
   border: transparent;
   float: right;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .area-search-2 {
-  margin: 28px 0; }
+  margin: 28px 0;
+}
 
 .search-bar-2 span {
-  font-size: 42px; }
+  font-size: 42px;
+}
 
 .search-bar-2 span:first-child {
   font-weight: 700;
-  margin-right: 30px; }
+  margin-right: 30px;
+}
 
 .search-bar-2 span:last-child {
   font-weight: 300;
-  font-style: italic; }
+  font-style: italic;
+}
 
 .git-search-2 {
   flex: 1;
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+}
 
 .git-search-2 input[type=text] {
   width: 600px;
   height: 50px;
   outline: 0;
-  border: 2px solid #000; }
+  border: 2px solid #000;
+}
 
 .git-search-2 button {
   width: 100px;
   height: 50px;
   background-color: black;
   color: white;
-  border: transparent; }
+  border: transparent;
+  cursor: pointer;
+}
 
 #profile {
-  display: flex; }
+  display: flex;
+}
 
 .sidebar {
   width: 100%;
-  max-width: 300px; }
+  max-width: 300px;
+}
 
 .name {
-  font-size: 36px; }
+  font-size: 36px;
+}
 
 .last-name {
   font-size: 24px;
-  color: #757575; }
+  color: #757575;
+}
 
 .avatar {
-  margin-bottom: 45px; }
+  margin-bottom: 45px;
+}
 
 .info {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+}
 
 .info img {
-  margin-right: 12px; }
+  margin-right: 12px;
+}
 
 .info p {
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 24px;
-  color: #757575; }
+  color: #757575;
+}
 
 main {
-  flex: 1; }
+  flex: 1;
+}
 
 .area-repository {
   margin-left: 56px;
-  margin-right: 28px; }
+  margin-right: 28px;
+}
 
 .item {
-  margin-bottom: 31px; }
+  margin-bottom: 31px;
+}
 
 .item p {
   margin-bottom: 10px;
-  color: #757575; }
+  color: #757575;
+}
 
 .item span {
-  color: #757575; }
+  color: #757575;
+}
 
 .item span img {
-  margin-right: 10px; }
-
-/*# sourceMappingURL=style.css.map */
+  margin-right: 10px;
+}

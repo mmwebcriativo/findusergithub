@@ -1,0 +1,47 @@
+[33mcommit 4494f1b6c9dd211ed28bebcbaabd5a3f7a66f187[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Mateus Garrido Monteiro <mmwebcriativo@gmail.com>
+Date:   Sat Oct 17 00:30:55 2020 -0300
+
+    Correção resultado de pesquisa
+
+[33mcommit a02dc1539c3d624f645bf7cf44deddd94b208e80[m
+Author: Mateus Garrido Monteiro <mmwebcriativo@gmail.com>
+Date:   Fri Oct 16 23:32:14 2020 -0300
+
+    Trocando a url do git de HTTPS para HTTP para funcionar no Netlify
+
+[33mcommit 590a409468991ecedd4dc18e66089db772eebf9d[m
+Author: Mateus Garrido Monteiro <mmwebcriativo@gmail.com>
+Date:   Fri Oct 16 23:27:14 2020 -0300
+
+    Inserindo alguns comentários no código
+
+[33mcommit 1368d99fcdd34c57d84af6454c31c126a6266c41[m
+Author: Mateus Garrido Monteiro <mmwebcriativo@gmail.com>
+Date:   Fri Oct 16 23:12:54 2020 -0300
+
+    Inserindo link para retorno na logo
+
+[33mcommit d889e31d2f8b410415be3b1b4c4ba7beb8612880[m
+Author: Mateus Garrido Monteiro <mmwebcriativo@gmail.com>
+Date:   Fri Oct 16 21:42:57 2020 -0300
+
+    Correção página retorno
+
+[33mcommit 108c67ff2cd5a481d00675e82967b4cfe697e385[m
+Author: Mateus Garrido Monteiro <mmwebcriativo@gmail.com>
+Date:   Fri Oct 16 21:19:24 2020 -0300
+
+    Alterando destido do search para novo arquivo
+
+[33mcommit d4a27e435b7ae06dae172a3e34f7b9a987ce78aa[m
+Author: Mateus Garrido Monteiro <mmwebcriativo@gmail.com>
+Date:   Fri Oct 16 17:18:20 2020 -0300
+
+    Primeiros arquivos
+
+[33mcommit 935a6cc2c098766116b57b12b2240c5ca8880b15[m
+Author: Mateus Garrido Monteiro <72807335+mmwebcriativo@users.noreply.github.com>
+Date:   Fri Oct 16 17:15:27 2020 -0300
+
+    Initial commit

@@ -116,7 +116,13 @@
 
         }
     }
-
+    function showEN(){
+        search.addEventListener("keyup", (e) =>{
+            if (e.keyCode === 13) {
+                searchUser()
+            }
+        })
+    } //Acessando pela Tecla Enter === 13
 
     function load(){
         const queryString = window.location.search;

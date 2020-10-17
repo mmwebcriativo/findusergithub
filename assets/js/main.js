@@ -19,6 +19,7 @@
     }
 
     function showProfile(user){
+        console.log(user)
         container.innerHTML = ` <div id="container" class="container flex "> 
 
         <aside class="sidebar"><!--ASIDE-->
@@ -90,7 +91,8 @@
         
     }
 
-     search.addEventListener("keyup", e =>{
+  
+    search.addEventListener("keyup", e =>{
         const user = e.target.value
 
         if(user.length > 0){
@@ -98,20 +100,15 @@
         }
         
     })  //Recebendo o que está sendo digitado no input search
-    
 
     function searchUser(){      
-        if ( search.value == "" ){
+        if (search.value == "" ){
             search.style.borderColor = "red" 
             search.focus() //Verificando se o campo input está vazio
         } else{
+            
             search.style.borderColor = "#000"
             window.location.href = "usuarios.html"; //Direcionando para a página usuários
 
         }
     }
-
-    
-
-
-

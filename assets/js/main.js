@@ -1,5 +1,3 @@
-
-    
     let areaSearch = document.querySelector(".area-search")
     let searchBar = document.querySelector(".search-bar")
     let gitSearch = document.querySelector(".git-search")
@@ -21,7 +19,6 @@
     }
 
     function showProfile(user){
-        console.log(user)
         container.innerHTML = ` <div id="container" class="container flex "> 
 
         <aside class="sidebar"><!--ASIDE-->
@@ -93,8 +90,6 @@
         
     }
 
-     
-/*
      search.addEventListener("keyup", e =>{
         const user = e.target.value
 
@@ -102,8 +97,9 @@
             getUser(user).then(res => showProfile(res))
         }
         
-    }) */ //Recebendo o que está sendo digitado no input search
+    })  //Recebendo o que está sendo digitado no input search
     
+
     function searchUser(){      
         if ( search.value == "" ){
             search.style.borderColor = "red" 
@@ -111,6 +107,7 @@
         } else{
             search.style.borderColor = "#000"
             window.location.href = "usuarios.html"; //Direcionando para a página usuários
+
         }
     }
 
